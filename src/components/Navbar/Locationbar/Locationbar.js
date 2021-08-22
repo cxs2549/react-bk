@@ -6,12 +6,12 @@ import { HiOutlineShoppingBag } from "react-icons/hi";
 const StyledLocationbar = styled.div`
   background-color: #2e782a;
   position: fixed;
-  bottom: 60px;
+  bottom: 54px;
   left: 0;
   width: 100%;
   color: white;
   height: auto;
-  padding: .5rem 0;
+  padding: .25rem 0;
   @media (min-width: 768px) {
     bottom: 0;
   }
@@ -43,6 +43,9 @@ const StyledLocationbar = styled.div`
       }
       p {
           font-size: 80%;
+          @media (min-width: 365px) {
+            font-size: 100%;
+          }
       }
       &:nth-of-type(2) {
         display: flex;
@@ -60,6 +63,9 @@ const StyledLocationbar = styled.div`
           color: white;
           font-weight: 600;
           font-size: 97%;
+          &:focus {
+            outline: none;
+          }
         }
         svg {
           position: absolute;
@@ -79,6 +85,11 @@ const StyledLocationbar = styled.div`
         gap: 0.4rem;
         padding: 0.25rem 0;
         border-radius: 99999px;
+        transition: filter 300ms;
+        cursor: pointer;
+        &:hover {
+          filter: brightness(1.2);
+        }
         @media (min-width: 375px) {
             max-width: 90px;
         }

@@ -10,7 +10,7 @@ const StyledBottombar = styled.div`
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 60px;
+  height: 54px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   align-items: center;
@@ -21,6 +21,7 @@ const StyledBottombar = styled.div`
   color: rgb(80, 35, 20);
   @media (min-width: 768px) {
     display: none;
+    font-size: 75%;
   }
   > a {
     display: flex;
@@ -44,6 +45,8 @@ const StyledBottombar = styled.div`
     }
     span {
         display: none;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
         @media (min-width: 375px) {
             display: flex;
             height: 20px;
@@ -54,7 +57,7 @@ const StyledBottombar = styled.div`
     }
   }
   .active {
-    color: red;
+    color: #ca2216;;
   }
 `;
 const Bottombar = () => {

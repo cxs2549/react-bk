@@ -56,6 +56,7 @@ const StyledNavbar = styled.header`
         height: auto;
         min-width: 200px;
         background-color: #f2e6d4;
+        color: rgb(80, 35, 20);
         white-space: nowrap;
         box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 				padding: 1rem 0;
@@ -95,6 +96,7 @@ const StyledNavbar = styled.header`
 						padding: .25rem 2rem;
 						height: 100%;
 						overflow: hidden;
+            color: rgb(80, 35, 20);
 					&:hover {
 						color: #ca2216;;
 					}
@@ -118,8 +120,8 @@ const StyledNavbar = styled.header`
             align-items: center;
             gap: 0.2rem;
             svg {
-              margin-top: 4px;
-              font-size: 86%;
+              margin-top: 7px;
+              font-size: 82%;
             }
           }
         }
@@ -149,6 +151,10 @@ const StyledNavbar = styled.header`
         border-radius: 99999px;
         font-size: 90%;
         letter-spacing: 0.09px;
+        transition: filter 300ms;
+        &:hover {
+          filter: brightness(1.2);
+        }
         @media (min-width: 768px) {
           padding: 0.5rem 1.5rem;
           font-size: 100%;
