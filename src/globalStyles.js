@@ -19,6 +19,7 @@ const GlobalStyles = createGlobalStyle`
     button, svg, a, img {
         cursor: pointer;
         font-family: 'Paytone One';
+        letter-spacing: .5px;
     }
     a {
         color: inherit;

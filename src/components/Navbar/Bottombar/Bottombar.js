@@ -57,7 +57,7 @@ const StyledBottombar = styled.div`
     }
   }
   .active {
-    color: #ca2216;;
+    color: #ca2216;
   }
 `;
 const Bottombar = () => {
