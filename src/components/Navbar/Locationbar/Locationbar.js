@@ -1,17 +1,18 @@
 import styled from 'styled-components'
-import { ImLocation } from 'react-icons/im'
+import { FaUtensils } from 'react-icons/fa'
 import { AiOutlineRight } from 'react-icons/ai'
 import { HiOutlineShoppingBag } from 'react-icons/hi'
 
 const StyledLocationbar = styled.div`
 	background-color: #2e782a;
 	position: fixed;
-	bottom: 60px;
+	bottom: 54px;
 	left: 0;
 	width: 100%;
 	color: white;
 	height: auto;
 	padding: .5rem 0;
+	z-index: 100;
 	@media (min-width: 768px) {
 		bottom: 0;
 	}
@@ -72,21 +73,7 @@ const StyledLocationbar = styled.div`
 					bottom: 0.3rem;
 				}
 			}
-			&:last-of-type {
-				background-color: #fff;
-				color: #2e782a;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				max-width: 60px;
-				min-width: 50px;
-				gap: 0.4rem;
-				padding: 0.25rem 0;
-				border-radius: 99999px;
-				@media (min-width: 375px) {
-					min-width: 90px;
-				}
-			}
+		
 		}
 		svg {
 			&:nth-of-type(1) {
@@ -101,17 +88,14 @@ const Locationbar = () => {
 			<div id="wrapContainer">
 				<div id="wrap">
 					<div>
-						<ImLocation />
+						<FaUtensils />
 					</div>
 					<div>
 						<p>Pick Up</p>
 						<input type="text" placeholder="1830 W 8th Street" />
 						<AiOutlineRight />
 					</div>
-					<div>
-						<HiOutlineShoppingBag />
-						<span>0</span>
-					</div>
+				
 				</div>
 			</div>
 		</StyledLocationbar>

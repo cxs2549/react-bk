@@ -8,8 +8,10 @@ const StyledCard = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: .75rem;
+  padding-bottom: 4px;
   font-family: 'Paytone One';
   position: relative;
+  max-width: 440px;
   >div:first-of-type{
     min-width: 50%˛;
     max-width: 50%˛;
@@ -22,15 +24,17 @@ const StyledCard = styled.div`
     }
     h1 {
       font-size: 360%;
-      margin-top: -10px;
+      margin-top: -20px;
+      color: var(--brandRed);
       span {
         font-size: 70%;
       }
     }
     p {
-      font-size: 70%;
+      font-size: 80%;
       line-height: 1.1;
       max-width: 75%;
+      margin-top: -6px;
     }
     h3 {
       font-size: 80%;
@@ -41,7 +45,7 @@ const StyledCard = styled.div`
   >div:last-of-type {
     
     position: absolute;
-    right: 16px;
+    right: 8px;
     bottom: 0;
     display: flex;
     padding: 1rem 0;
@@ -50,7 +54,7 @@ const StyledCard = styled.div`
     height: 100%;
     img {
       width: 100%;
-      max-width: 160px;
+      max-width: 150px;
       object-fit: contain;
      
     }

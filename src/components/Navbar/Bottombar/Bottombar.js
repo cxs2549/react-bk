@@ -19,6 +19,8 @@ const StyledBottombar = styled.div`
   text-transform: capitalize;
   font-weight: 600;
   color: rgb(80, 35, 20);
+  background-color: #F2E6D4;
+  z-index: 100;
   @media (min-width: 768px) {
     display: none;
     font-size: 75%;

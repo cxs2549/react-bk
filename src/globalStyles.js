@@ -9,12 +9,22 @@ const GlobalStyles = createGlobalStyle`
     }
     :root {
         --maxWidth: 1300px;
+        --brandBase: #F2E6D4;
+        --brandRed: #ca2216;
     }
     body {
         font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
         -webkit-font-smoothing: antialiased;
 	    -moz-osx-font-smoothing: grayscale;
         background-color: #F2E6D4;
+    }
+    main {
+        max-width: var(--maxWidth);
+        margin: 0 auto;
+        margin-bottom: 128px;
+        @media (min-width: 768px) {
+            margin-bottom: 74px;
+        }
     }
     button, svg, a, img {
         cursor: pointer;
